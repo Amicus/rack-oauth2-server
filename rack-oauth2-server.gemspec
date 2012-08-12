@@ -22,6 +22,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "rack", "~>1.1"
   spec.add_dependency "mongo", "~>1"
   unless defined? JRUBY_VERSION
+    spec.platform = "java"
     spec.add_dependency "bson_ext"
   end
   spec.add_dependency "sinatra", "~>1.1"
